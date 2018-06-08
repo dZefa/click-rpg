@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 
-import './global.scss';
+import './styles/global.scss';
+
+import { App } from './components/app';
 
 render(
-  <div>hi</div>,
+  <App />,
   document.getElementById('root')
 );
