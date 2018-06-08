@@ -3,12 +3,12 @@ require('babel-register');
 
 const environment = process.argv[2];
 
-if (!script) {
+if (!environment) {
   throw Error(`Please provide an argument to bin/entry.js`);
   process.exit();
 }
 
-if (script === 'development') {
+if (environment === 'development') {
   const path = require('path');
 
   require('dotenv').config({
