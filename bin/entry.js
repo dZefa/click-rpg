@@ -8,7 +8,7 @@ if (!script) {
   process.exit();
 }
 
-if (script !== 'production') {
+if (script === 'development') {
   const path = require('path');
 
   require('dotenv').config({
