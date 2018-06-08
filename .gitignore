@@ -5,8 +5,7 @@
 # Ops
 
 package-lock.json
-
-
+.env
 # Build
 
 /build/
