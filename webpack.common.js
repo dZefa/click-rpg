@@ -3,12 +3,10 @@ const path = require('path');
 const HTMLPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const ExtractCSSPlugin = require('mini-css-extract-plugin');
-const TSconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const APP_DIR = path.resolve(__dirname, './src/index.tsx');
 const BUILD_DIR = path.resolve(__dirname, './build');
 const TEMPLATE_DIR = path.resolve(__dirname, './src/template.index.html');
-const TSconfig_DIR = path.resolve(__dirname, './tsconfig.json');
 
 module.exports = {
   entry: {
@@ -20,7 +18,7 @@ module.exports = {
   },
   resolve: {
     extensions: [
-      "ts", "tsx", "js"
+      ".ts", ".tsx", ".js", ".json"
     ],
   },
   module: {
@@ -59,9 +57,6 @@ module.exports = {
     new HTMLPlugin({
       template: TEMPLATE_DIR,
       inject: true,
-    }),
-    new TSconfigPathsPlugin({
-      configFile: TSconfig_DIR,
     })
   ]
-}
+};

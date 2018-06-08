@@ -7,6 +7,6 @@
     "target": "es6",
     "jsx": "react",
     "rootDir": "./src/",
-    "sourceRoot": "./src/"
+    "sourceRoot": "./src/",
   }
 }
