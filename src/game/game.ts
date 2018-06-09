@@ -3,7 +3,7 @@ import 'phaser';
 import { BootScene } from './scenes/bootScene';
 import { MainMenuScene } from './scenes/mainMenuScene';
 
-const config: GameConfig = {
+export const config: GameConfig = {
   title: "Click RPG",
   url: "https://github.com/dzefa/click-rpg",
   version: "0.1",
