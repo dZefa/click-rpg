@@ -1,5 +1,7 @@
 import 'phaser';
 
+import { BootScene } from './scenes/bootScene';
+
 const config: GameConfig = {
   title: "Click RPG",
   url: "https://github.com/dzefa/click-rpg",
@@ -9,7 +11,7 @@ const config: GameConfig = {
   zoom: 1,
   type: Phaser.AUTO,
   parent: "game",
-  scene: [],
+  scene: [BootScene],
   input: {
     keyboard: true,
     mouse: true,
