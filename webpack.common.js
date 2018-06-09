@@ -7,10 +7,12 @@ const ExtractCSSPlugin = require('mini-css-extract-plugin');
 const APP_DIR = path.resolve(__dirname, './src/index.tsx');
 const BUILD_DIR = path.resolve(__dirname, './build');
 const TEMPLATE_DIR = path.resolve(__dirname, './src/template.index.html');
+const GAME_DIR = path.resolve(__dirname, './src/game/entry.ts');
 
 module.exports = {
   entry: {
     app: APP_DIR,
+    game: GAME_DIR,
   },
   output: {
     path: BUILD_DIR,
