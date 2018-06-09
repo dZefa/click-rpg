@@ -1,6 +1,7 @@
 import 'phaser';
 
 import { BootScene } from './scenes/bootScene';
+import { MainMenuScene } from './scenes/mainMenuScene';
 
 const config: GameConfig = {
   title: "Click RPG",
@@ -11,7 +12,7 @@ const config: GameConfig = {
   zoom: 1,
   type: Phaser.AUTO,
   parent: "game",
-  scene: [BootScene],
+  scene: [BootScene, MainMenuScene],
   input: {
     keyboard: true,
     mouse: true,
