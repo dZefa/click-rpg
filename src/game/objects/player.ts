@@ -7,7 +7,7 @@ interface GameObjectsImageParams {
 
 export class Player extends Phaser.GameObjects.Image {
   private walkingSpeed: number = 5;
-  private clicks: number;
+  private clicks: number = 0;
   private score: number = 0;
 
   constructor(params: GameObjectsImageParams) {
@@ -25,7 +25,7 @@ export class Player extends Phaser.GameObjects.Image {
   }
 
   update(): void {
-
+    
   }
 
   private clickHandler(): void {
@@ -35,11 +35,11 @@ export class Player extends Phaser.GameObjects.Image {
   }
 
   public getClicks(): number {
-    return this.score;
+    return this.clicks;
   }
 
   private incrementScore(): void {
-    this.clicks++;
+    this.clicks += 1;
     console.log(`score: ${this.getClicks()}`);
   }
 }
