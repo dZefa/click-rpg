@@ -6,6 +6,10 @@
 
 package-lock.json
 .env
+
 # Build
 
 /build/
+
+# Assets
+/src/assets
