@@ -51,7 +51,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanPlugin(['build']),
+    new CleanPlugin(['build'], {
+      exclude: ['assets'],
+    }),
     new ExtractCSSPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
